@@ -222,6 +222,13 @@ const Index = () => {
                 <h2 className="mb-6 text-2xl sm:text-3xl font-bold tracking-tight text-primary lg:text-4xl">
                   Por que escolher a Phoenix?
                 </h2>
+
+              <p className="text-lg text-muted-foreground mb-8">
+                Com mais de 30 anos de experiência no mercado,
+                 a Phoenix Serviços Empresariais se consolidou como referência em qualidade e confiabilidade.</p>
+
+
+
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10">
