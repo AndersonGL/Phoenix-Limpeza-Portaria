@@ -312,7 +312,6 @@ const Index = () => {
               <ul className="space-y-2 text-sm text-primary-foreground/80">
                 <li>Limpeza</li>
                 <li>Portaria e Recepção</li>
-                <li>Limpeza Pós-Obra</li>
                 <li>Controle de Acesso</li>
               </ul>
             </div>
