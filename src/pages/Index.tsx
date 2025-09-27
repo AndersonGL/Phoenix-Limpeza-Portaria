@@ -79,7 +79,7 @@ const Index = () => {
                 Nossos Serviços
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-                Soluções completas em limpeza e segurança para manter sua empresa sempre impecável
+                Excelência em limpeza e portaria para empresas que valorizam qualidade e confiabilidade.
               </p>
             </div>
 
@@ -128,11 +128,11 @@ const Index = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-primary text-lg sm:text-xl">Controle de acesso 24h</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl">Recepção e atendimento ao cliente</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm sm:text-base">
-                    Profissionais capacitados para monitorar entradas e saídas, garantindo segurança e organização
+                   Atendimento qualificado e acolhedor para recepção de visitantes e clientes
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -146,11 +146,11 @@ const Index = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-primary text-lg sm:text-xl">Controle de acesso 24h</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl">Contratação CLT</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm sm:text-base">
-                    Profissionais capacitados para monitorar entradas e saídas, garantindo segurança e organização
+                    Gestão completa de recursos humanos e administração de pessoal terceirizado
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -164,11 +164,11 @@ const Index = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-primary text-lg sm:text-xl">Controle de acesso 24h</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl">Serviços de Copa</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm sm:text-base">
-                    Profissionais capacitados para monitorar entradas e saídas, garantindo segurança e organização
+                    Profissionais para serviços de copa e atendimento em ambientes corporativos
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -182,11 +182,11 @@ const Index = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-primary text-lg sm:text-xl">Recepção e atendimento</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl">Manutenção de Jardins</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm sm:text-base">
-                    Atendimento qualificado e acolhedor para recepção de visitantes e clientes
+                    Manutenção e cuidado de áreas verdes e paisagismo corporativo
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -200,11 +200,11 @@ const Index = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-primary text-lg sm:text-xl">Contratação CLT</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl">Reparos em geral</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm sm:text-base">
-                    Gestão completa de recursos humanos e administração de pessoal terceirizado
+                    Serviços especializados de manutenção para edifícios e instalações industriais
                   </CardDescription>
                 </CardContent>
               </Card>
