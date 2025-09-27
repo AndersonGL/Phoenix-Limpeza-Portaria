@@ -6,9 +6,7 @@ import cleaningPerson from "@/assets/limpeza.jpg";
 import securityPerson from "@/assets/controlador.jpg";
 import receptionistPerson from "@/assets/jardinagem.jpg";
 import hrPerson from "@/assets/manutencao.jpg";
-import recepcaoImage from "@assets/recepcao.jpg"
-import contratacaoImage from "@assets/administracao.jpg"
-import copeiraImage from "@assets/copeira.jpg"
+
 
 import { Phone, Mail, MapPin, Menu, X, MessageCircle, Shield, Sparkles, Users } from "lucide-react";
 import { useState } from "react";
@@ -126,7 +124,7 @@ const Index = () => {
                   <Card className="text-center overflow-hidden">
                 <div className="relative h-48 sm:h-56">
                   <img 
-                    src={recepcaoImage} 
+                    src={cleaningPerson} 
                     alt="Recpcionista" 
                     className="w-full h-full object-cover"
                   />
@@ -144,7 +142,7 @@ const Index = () => {
                   <Card className="text-center overflow-hidden">
                 <div className="relative h-48 sm:h-56">
                   <img 
-                    src={contratacaoImage} 
+                    src={cleaningPerson} 
                     alt="Profissional de administração" 
                     className="w-full h-full object-cover"
                   />
@@ -162,7 +160,7 @@ const Index = () => {
     <Card className="text-center overflow-hidden">
                 <div className="relative h-48 sm:h-56">
                   <img 
-                    src={copeiraImage} 
+                    src={cleaningPerson} 
                     alt="Copeira" 
                     className="w-full h-full object-cover"
                   />
