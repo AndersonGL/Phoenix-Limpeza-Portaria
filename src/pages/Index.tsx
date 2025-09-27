@@ -16,65 +16,19 @@ const Index = () => {
     window.open('https://wa.me/5511996000451?text=Olá! Gostaria de solicitar um orçamento para os serviços da Phoenix.', '_blank');
   };
 
-  return (
+ return (
     <div className="min-h-screen bg-background">
       {/* Header Simples */}
       <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 relative">
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
             {/* Espaço vazio à esquerda */}
-            <div></div>
-            
-            {/* Menu Desktop - Hidden on mobile */}
-            <nav className="hidden md:flex space-x-8">
-              <a 
-                href="#inicio" 
-                className="text-primary font-medium hover:text-primary/80 transition-colors"
-              >
-                Início
-              </a>
-              <a 
-                href="#servicos" 
-                className="text-primary font-medium hover:text-primary/80 transition-colors"
-              >
-                Nossos Serviços
-              </a>
-            </nav>
-            
-            {/* Menu Hambúrguer Mobile */}
-            <button 
-              className="md:hidden p-2 hover:bg-primary/10 rounded-md transition-colors"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Menu"
-            >
-              {isMenuOpen ? <X className="h-6 w-6 text-primary" /> : <Menu className="h-6 w-6 text-primary" />}
-            </button>
           </div>
-          
-          {/* Menu Mobile Dropdown */}
-          {isMenuOpen && (
-            <div className="md:hidden absolute top-full left-0 right-0 bg-primary border-b shadow-lg z-50">
-              <nav className="container mx-auto px-4 py-4 space-y-4">
-                <a 
-                  href="#inicio" 
-                  className="block text-primary-foreground font-medium hover:text-primary-foreground/80 transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Início
-                </a>
-                <a 
-                  href="#servicos" 
-                  className="block text-primary-foreground font-medium hover:text-primary-foreground/80 transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Nossos Serviços
-                </a>
-              </nav>
-            </div>
-          )}
         </div>
       </header>
 
+            
+           
       <main>
         {/* Hero Section */}
         <section id="inicio" className="relative overflow-hidden bg-gradient-hero py-12 sm:py-20 lg:py-32">
@@ -117,6 +71,8 @@ const Index = () => {
           </div>
         </section>
 
+ 
+
         {/* Nossos Serviços */}
         <section id="servicos" className="py-12 sm:py-20 bg-secondary/30">
           <div className="container mx-auto px-4">
@@ -149,6 +105,59 @@ const Index = () => {
               </Card>
 
               <Card className="text-center overflow-hidden">
+                <div className="relative h-48 sm:h-56">
+                  <img 
+                    src={securityPerson} 
+                    alt="Profissional de segurança" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-primary text-lg sm:text-xl">Controle de acesso 24h</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-sm sm:text-base">
+                    Profissionais capacitados para monitorar entradas e saídas, garantindo segurança e organização
+                  </CardDescription>
+                </CardContent>
+              </Card>
+                  <Card className="text-center overflow-hidden">
+                <div className="relative h-48 sm:h-56">
+                  <img 
+                    src={securityPerson} 
+                    alt="Profissional de segurança" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-primary text-lg sm:text-xl">Controle de acesso 24h</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-sm sm:text-base">
+                    Profissionais capacitados para monitorar entradas e saídas, garantindo segurança e organização
+                  </CardDescription>
+                </CardContent>
+              </Card>
+
+                  <Card className="text-center overflow-hidden">
+                <div className="relative h-48 sm:h-56">
+                  <img 
+                    src={securityPerson} 
+                    alt="Profissional de segurança" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-primary text-lg sm:text-xl">Controle de acesso 24h</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-sm sm:text-base">
+                    Profissionais capacitados para monitorar entradas e saídas, garantindo segurança e organização
+                  </CardDescription>
+                </CardContent>
+              </Card>
+
+    <Card className="text-center overflow-hidden">
                 <div className="relative h-48 sm:h-56">
                   <img 
                     src={securityPerson} 
