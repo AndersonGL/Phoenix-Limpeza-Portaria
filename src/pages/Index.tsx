@@ -22,7 +22,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Header Simples */}
       <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 relative">
-        <div className="container mx-auto px-4 py-3">
+        <div className="container mx-auto px-0 py-0">
           <div className="flex items-center justify-between">
             {/* Espaço vazio à esquerda */}
           </div>
