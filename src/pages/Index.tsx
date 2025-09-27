@@ -14,18 +14,12 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header com Logo */}
+      {/* Header Simples */}
       <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 relative">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <img 
-              src={phoenixLogo} 
-              alt="Phoenix Serviços Empresariais Logo" 
-              className="h-20 w-auto"
-            />
-            
-            {/* Menu Desktop - oculto */}
-            <div className="hidden"></div>
+            {/* Espaço vazio à esquerda */}
+            <div></div>
             
             {/* Menu Hambúrguer Mobile */}
             <button 
@@ -67,12 +61,19 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
               <div className="text-center lg:text-left">
-                <h1 className="mb-6 text-4xl font-bold tracking-tight text-primary-foreground sm:text-5xl xl:text-6xl">
-                  Phoenix
-                  <span className="block text-3xl sm:text-4xl xl:text-5xl font-semibold">
-                    Serviços Empresariais
-                  </span>
-                </h1>
+                <div className="flex items-center justify-center lg:justify-start mb-6">
+                  <img 
+                    src={phoenixLogo} 
+                    alt="Phoenix Serviços Empresariais Logo" 
+                    className="h-24 w-auto mr-4"
+                  />
+                  <h1 className="text-4xl font-bold tracking-tight text-primary-foreground sm:text-5xl xl:text-6xl">
+                    Phoenix
+                    <span className="block text-3xl sm:text-4xl xl:text-5xl font-semibold">
+                      Serviços Empresariais
+                    </span>
+                  </h1>
+                </div>
                 <p className="mb-8 text-lg text-primary-foreground/90 sm:text-xl">
                   Excelência em limpeza e portaria para empresas que valorizam qualidade e confiabilidade.
                 </p>
@@ -224,15 +225,15 @@ const Index = () => {
                   <CardContent className="space-y-4">
                     <div className="flex items-center gap-3">
                       <Phone className="h-5 w-5 text-primary" />
-                      <span className="text-muted-foreground">(11) 9999-9999</span>
+                      <span className="text-muted-foreground">(11) 99600-0451</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <Mail className="h-5 w-5 text-primary" />
-                      <span className="text-muted-foreground">contato@phoenixservicos.com.br</span>
+                      <span className="text-muted-foreground">phoenixservempresariais@gmail.com</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <MapPin className="h-5 w-5 text-primary" />
-                      <span className="text-muted-foreground">São Paulo, SP</span>
+                      <span className="text-muted-foreground">Rua Vicente Greco 292 Conj 706 Mauá, SP</span>
                     </div>
                     <Button variant="phoenix" className="w-full mt-6">
                       Entrar em Contato
@@ -248,29 +249,53 @@ const Index = () => {
       {/* Footer */}
       <footer className="border-t bg-primary text-primary-foreground py-12">
         <div className="container mx-auto px-4">
-          <div className="text-center">
-            <img 
-              src={phoenixLogo} 
-              alt="Phoenix Serviços Empresariais" 
-              className="h-16 w-auto mx-auto mb-4 brightness-0 invert"
-            />
-            <h3 className="text-xl font-semibold mb-2">Phoenix Serviços Empresariais</h3>
-            <p className="text-primary-foreground/80 mb-6 max-w-md mx-auto">
-              Excelência em limpeza e portaria para empresas que valorizam qualidade e confiabilidade.
-            </p>
-            <div className="flex justify-center gap-8 text-sm">
-              <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                <span>(11) 9999-9999</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail className="h-4 w-4" />
-                <span>contato@phoenixservicos.com.br</span>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {/* Logo e Descrição */}
+            <div className="text-center md:text-left">
+              <img 
+                src={phoenixLogo} 
+                alt="Phoenix Serviços Empresariais" 
+                className="h-16 w-auto mx-auto md:mx-0 mb-4 brightness-0 invert"
+              />
+              <h3 className="text-xl font-semibold mb-2">Phoenix Serviços Empresariais</h3>
+              <p className="text-primary-foreground/80 text-sm">
+                Excelência em limpeza e portaria para empresas que valorizam qualidade e confiabilidade.
+              </p>
+            </div>
+            
+            {/* Serviços */}
+            <div className="text-center md:text-left">
+              <h4 className="text-lg font-semibold mb-4">Serviços</h4>
+              <ul className="space-y-2 text-sm text-primary-foreground/80">
+                <li>Limpeza</li>
+                <li>Portaria e Recepção</li>
+                <li>Limpeza Pós-Obra</li>
+                <li>Controle de Acesso</li>
+              </ul>
+            </div>
+            
+            {/* Contato */}
+            <div className="text-center md:text-left">
+              <h4 className="text-lg font-semibold mb-4">Contato</h4>
+              <div className="space-y-2 text-sm text-primary-foreground/80">
+                <div className="flex items-center justify-center md:justify-start gap-2">
+                  <Phone className="h-4 w-4" />
+                  <span>(11) 99600-0451</span>
+                </div>
+                <div className="flex items-center justify-center md:justify-start gap-2">
+                  <Mail className="h-4 w-4" />
+                  <span>phoenixservempresariais@gmail.com</span>
+                </div>
+                <div className="flex items-center justify-center md:justify-start gap-2">
+                  <MapPin className="h-4 w-4" />
+                  <span>Rua Vicente Greco 292 Conj 706 Mauá, SP</span>
+                </div>
               </div>
             </div>
-            <div className="mt-8 pt-8 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/60">
-              <p>&copy; 2024 Phoenix Serviços Empresariais. Todos os direitos reservados.</p>
-            </div>
+          </div>
+          
+          <div className="mt-8 pt-8 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/60">
+            <p>&copy; 2024 Phoenix Serviços Empresariais. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
