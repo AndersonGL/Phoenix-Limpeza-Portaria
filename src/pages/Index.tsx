@@ -21,7 +21,7 @@ const Index = () => {
  return (
     <div className="min-h-screen bg-background">
       {/* Header Simples */}
-      <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 relative">
+      <header className="#">
         <div className="container mx-auto px-0 py-0">
           <div className="flex items-center justify-between">
             {/* Espaço vazio à esquerda */}
@@ -304,11 +304,11 @@ const Index = () => {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {/* Logo e Descrição */}
             <div className="text-center md:text-left">
-              <img 
-                src={phoenixLogo} 
-                alt="Phoenix Serviços Empresariais" 
-                className="h-16 w-auto mx-auto md:mx-0 mb-4 brightness-0 invert"
-              />
+               <img 
+                    src={phoenixLogo} 
+                    alt="Phoenix Serviços Empresariais Logo" 
+                    className="h-20 sm:h-20 w-auto"
+                  />
               <h3 className="text-xl font-semibold mb-2">Phoenix Serviços Empresariais</h3>
               <p className="text-primary-foreground/80 text-sm">
                 Excelência em limpeza e portaria para empresas que valorizam qualidade e confiabilidade.
