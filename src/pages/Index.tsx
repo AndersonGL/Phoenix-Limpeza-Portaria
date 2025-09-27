@@ -1,8 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import phoenixLogo from "@/assets/phoenix-logo.png";
-import blackCar from "@/assets/black-car.jpg";
-import { Phone, Mail, MapPin, Shield, Sparkles, Users, FileText, Menu, X, MessageCircle } from "lucide-react";
+import phoenixCar from "@/assets/phoenix-car.png";
+import cleaningPerson from "@/assets/cleaning-person.jpg";
+import securityPerson from "@/assets/security-person.jpg";
+import receptionistPerson from "@/assets/receptionist-person.jpg";
+import hrPerson from "@/assets/hr-person.jpg";
+import { Phone, Mail, MapPin, Menu, X, MessageCircle, Shield, Sparkles, Users } from "lucide-react";
 import { useState } from "react";
 
 const Index = () => {
@@ -16,10 +20,26 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Header Simples */}
       <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 relative">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
             {/* Espaço vazio à esquerda */}
             <div></div>
+            
+            {/* Menu Desktop - Hidden on mobile */}
+            <nav className="hidden md:flex space-x-8">
+              <a 
+                href="#inicio" 
+                className="text-primary font-medium hover:text-primary/80 transition-colors"
+              >
+                Início
+              </a>
+              <a 
+                href="#servicos" 
+                className="text-primary font-medium hover:text-primary/80 transition-colors"
+              >
+                Nossos Serviços
+              </a>
+            </nav>
             
             {/* Menu Hambúrguer Mobile */}
             <button 
@@ -33,18 +53,18 @@ const Index = () => {
           
           {/* Menu Mobile Dropdown */}
           {isMenuOpen && (
-            <div className="md:hidden absolute top-full left-0 right-0 bg-background border-b shadow-lg z-50">
+            <div className="md:hidden absolute top-full left-0 right-0 bg-primary border-b shadow-lg z-50">
               <nav className="container mx-auto px-4 py-4 space-y-4">
                 <a 
                   href="#inicio" 
-                  className="block text-primary font-medium hover:text-primary/80 transition-colors"
+                  className="block text-primary-foreground font-medium hover:text-primary-foreground/80 transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Início
                 </a>
                 <a 
                   href="#servicos" 
-                  className="block text-primary font-medium hover:text-primary/80 transition-colors"
+                  className="block text-primary-foreground font-medium hover:text-primary-foreground/80 transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Nossos Serviços
@@ -57,40 +77,40 @@ const Index = () => {
 
       <main>
         {/* Hero Section */}
-        <section id="inicio" className="relative overflow-hidden bg-gradient-hero py-20 lg:py-32">
+        <section id="inicio" className="relative overflow-hidden bg-gradient-hero py-12 sm:py-20 lg:py-32">
           <div className="container mx-auto px-4">
-            <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
-              <div className="text-center lg:text-left">
-                <div className="flex items-center justify-center lg:justify-start mb-6">
+            <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
+              <div className="text-center lg:text-left order-2 lg:order-1">
+                <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start mb-6 gap-4">
                   <img 
                     src={phoenixLogo} 
                     alt="Phoenix Serviços Empresariais Logo" 
-                    className="h-24 w-auto mr-4"
+                    className="h-20 sm:h-24 w-auto"
                   />
-                  <h1 className="text-4xl font-bold tracking-tight text-primary-foreground sm:text-5xl xl:text-6xl">
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-primary-foreground">
                     Phoenix
-                    <span className="block text-3xl sm:text-4xl xl:text-5xl font-semibold">
+                    <span className="block text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold">
                       Serviços Empresariais
                     </span>
                   </h1>
                 </div>
-                <p className="mb-8 text-lg text-primary-foreground/90 sm:text-xl">
+                <p className="mb-6 sm:mb-8 text-base sm:text-lg text-primary-foreground/90">
                   Excelência em limpeza e portaria para empresas que valorizam qualidade e confiabilidade.
                 </p>
                 <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
-                  <Button variant="phoenix-outline" size="lg">
+                  <Button variant="phoenix-outline" size="lg" className="w-full sm:w-auto">
                     Solicitar Orçamento
                   </Button>
-                  <Button variant="secondary" size="lg">
+                  <Button variant="secondary" size="lg" className="w-full sm:w-auto">
                     Nossos Serviços
                   </Button>
                 </div>
               </div>
-              <div className="relative">
+              <div className="relative order-1 lg:order-2">
                 <img 
-                  src={blackCar} 
-                  alt="Carro executivo preto representando nossos serviços premium" 
-                  className="w-full max-w-lg mx-auto rounded-lg shadow-royal"
+                  src={phoenixCar} 
+                  alt="Carro da Phoenix Serviços Empresariais" 
+                  className="w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto rounded-lg shadow-royal"
                 />
               </div>
             </div>
@@ -98,69 +118,85 @@ const Index = () => {
         </section>
 
         {/* Nossos Serviços */}
-        <section id="servicos" className="py-20 bg-secondary/30">
+        <section id="servicos" className="py-12 sm:py-20 bg-secondary/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="mb-4 text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="mb-4 text-2xl sm:text-3xl font-bold tracking-tight text-primary lg:text-4xl">
                 Nossos Serviços
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
                 Soluções completas em limpeza e segurança para manter sua empresa sempre impecável
               </p>
             </div>
 
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-              <Card className="text-center">
+            <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
+              <Card className="text-center overflow-hidden">
+                <div className="relative h-48 sm:h-56">
+                  <img 
+                    src={cleaningPerson} 
+                    alt="Profissional de limpeza" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <CardHeader>
-                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                    <Sparkles className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle className="text-primary">Limpeza</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl">Limpeza</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription>
+                  <CardDescription className="text-sm sm:text-base">
                     Serviços completos de limpeza para ambientes corporativos com profissionais especializados
                   </CardDescription>
                 </CardContent>
               </Card>
 
-              <Card className="text-center">
+              <Card className="text-center overflow-hidden">
+                <div className="relative h-48 sm:h-56">
+                  <img 
+                    src={securityPerson} 
+                    alt="Profissional de segurança" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <CardHeader>
-                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                    <Shield className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle className="text-primary">Controle de acesso 24h</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl">Controle de acesso 24h</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription>
+                  <CardDescription className="text-sm sm:text-base">
                     Profissionais capacitados para monitorar entradas e saídas, garantindo segurança e organização
                   </CardDescription>
                 </CardContent>
               </Card>
 
-              <Card className="text-center">
+              <Card className="text-center overflow-hidden">
+                <div className="relative h-48 sm:h-56">
+                  <img 
+                    src={receptionistPerson} 
+                    alt="Profissional de recepção" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <CardHeader>
-                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                    <Users className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle className="text-primary">Recepção e atendimento</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl">Recepção e atendimento</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription>
+                  <CardDescription className="text-sm sm:text-base">
                     Atendimento qualificado e acolhedor para recepção de visitantes e clientes
                   </CardDescription>
                 </CardContent>
               </Card>
 
-              <Card className="text-center">
+              <Card className="text-center overflow-hidden">
+                <div className="relative h-48 sm:h-56">
+                  <img 
+                    src={hrPerson} 
+                    alt="Profissional de RH" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <CardHeader>
-                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                    <FileText className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle className="text-primary">Contratação CLT</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl">Contratação CLT</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription>
+                  <CardDescription className="text-sm sm:text-base">
                     Gestão completa de recursos humanos e administração de pessoal terceirizado
                   </CardDescription>
                 </CardContent>
@@ -170,11 +206,11 @@ const Index = () => {
         </section>
 
         {/* Por que escolher a Phoenix */}
-        <section className="py-20">
+        <section className="py-12 sm:py-20">
           <div className="container mx-auto px-4">
-            <div className="grid gap-12 lg:grid-cols-2 items-center">
+            <div className="grid gap-8 lg:gap-12 lg:grid-cols-2 items-center">
               <div>
-                <h2 className="mb-6 text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+                <h2 className="mb-6 text-2xl sm:text-3xl font-bold tracking-tight text-primary lg:text-4xl">
                   Por que escolher a Phoenix?
                 </h2>
                 <div className="space-y-6">
