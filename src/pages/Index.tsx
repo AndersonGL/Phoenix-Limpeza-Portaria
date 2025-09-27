@@ -39,7 +39,7 @@ const Index = () => {
                   <img 
                     src={phoenixLogo} 
                     alt="Phoenix Serviços Empresariais Logo" 
-                    className="h-20 sm:h-24 w-auto"
+                    className="h-40 sm:h-40 w-auto"
                   />
                   <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-primary-foreground">
                     Phoenix
@@ -55,9 +55,7 @@ const Index = () => {
                   <Button variant="phoenix-outline" size="lg" className="w-full sm:w-auto">
                     Solicitar Orçamento
                   </Button>
-                  <Button variant="secondary" size="lg" className="w-full sm:w-auto">
-                    Nossos Serviços
-                  </Button>
+                
                 </div>
               </div>
               <div className="relative order-1 lg:order-2">
