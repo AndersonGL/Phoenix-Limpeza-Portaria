@@ -2,27 +2,68 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import phoenixLogo from "@/assets/phoenix-logo.png";
 import blackCar from "@/assets/black-car.jpg";
-import { Phone, Mail, MapPin, Shield, Sparkles, Users, FileText } from "lucide-react";
+import { Phone, Mail, MapPin, Shield, Sparkles, Users, FileText, Menu, X, MessageCircle } from "lucide-react";
+import { useState } from "react";
 
 const Index = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/5511996000451?text=Olá! Gostaria de solicitar um orçamento para os serviços da Phoenix.', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header com Logo */}
-      <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 relative">
         <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-between">
             <img 
               src={phoenixLogo} 
               alt="Phoenix Serviços Empresariais Logo" 
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
+            
+            {/* Menu Desktop - oculto */}
+            <div className="hidden"></div>
+            
+            {/* Menu Hambúrguer Mobile */}
+            <button 
+              className="md:hidden p-2 hover:bg-primary/10 rounded-md transition-colors"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Menu"
+            >
+              {isMenuOpen ? <X className="h-6 w-6 text-primary" /> : <Menu className="h-6 w-6 text-primary" />}
+            </button>
           </div>
+          
+          {/* Menu Mobile Dropdown */}
+          {isMenuOpen && (
+            <div className="md:hidden absolute top-full left-0 right-0 bg-background border-b shadow-lg z-50">
+              <nav className="container mx-auto px-4 py-4 space-y-4">
+                <a 
+                  href="#inicio" 
+                  className="block text-primary font-medium hover:text-primary/80 transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Início
+                </a>
+                <a 
+                  href="#servicos" 
+                  className="block text-primary font-medium hover:text-primary/80 transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Nossos Serviços
+                </a>
+              </nav>
+            </div>
+          )}
         </div>
       </header>
 
       <main>
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-hero py-20 lg:py-32">
+        <section id="inicio" className="relative overflow-hidden bg-gradient-hero py-20 lg:py-32">
           <div className="container mx-auto px-4">
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
               <div className="text-center lg:text-left">
@@ -211,7 +252,7 @@ const Index = () => {
             <img 
               src={phoenixLogo} 
               alt="Phoenix Serviços Empresariais" 
-              className="h-12 w-auto mx-auto mb-4 brightness-0 invert"
+              className="h-16 w-auto mx-auto mb-4 brightness-0 invert"
             />
             <h3 className="text-xl font-semibold mb-2">Phoenix Serviços Empresariais</h3>
             <p className="text-primary-foreground/80 mb-6 max-w-md mx-auto">
@@ -233,6 +274,15 @@ const Index = () => {
           </div>
         </div>
       </footer>
+
+      {/* Botão WhatsApp Flutuante */}
+      <button
+        onClick={handleWhatsAppClick}
+        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 z-50"
+        aria-label="Entrar em contato via WhatsApp"
+      >
+        <MessageCircle className="h-6 w-6" />
+      </button>
     </div>
   );
 };
