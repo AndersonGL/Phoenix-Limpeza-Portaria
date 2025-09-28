@@ -284,9 +284,9 @@ const Index = () => {
                 <div className="absolute inset-0 bg-gradient-hero rounded-lg transform rotate-3"></div>
                 <Card className="relative bg-background p-8">
                   <CardHeader className="text-center">
-                    <CardTitle className="text-2xl text-primary">Solicite um Orçamento</CardTitle>
+                    <CardTitle className="text-2xl text-primary">Trabalhe Conosco</CardTitle>
                     <CardDescription>
-                      Entre em contato conosco e descubra como podemos ajudar sua empresa
+                      Vagas para: Auxiliar de Limpeza. Porteiro. Controlador de Acesso. Recepcionista. Jardineiro. 
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-4">
