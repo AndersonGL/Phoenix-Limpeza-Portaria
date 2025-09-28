@@ -57,13 +57,13 @@ const Index = () => {
                   Excelência em limpeza e portaria para empresas que valorizam qualidade e confiabilidade.
                 </p>
                 <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start mb-6 lg:mb-0">
-                  <Button variant="phoenix-outline" size="lg" className="w-full sm:w-auto">
+                  <Button variant="phoenix-outline" size="lg" className="w-full sm:w-auto" onClick={handleWhatsAppClick}>
                     Solicitar Orçamento
                   </Button>
                 </div>
                 {/* Imagem do carro apenas no mobile */}
                 <div className="block lg:hidden mt-6">
-                  <div className="bg-black p-4 rounded-lg">
+                  <div className="bg-primary p-4 rounded-lg border-2 border-primary">
                     <img 
                       src={phoenixCar} 
                       alt="Carro da Phoenix Serviços Empresariais" 
@@ -74,7 +74,7 @@ const Index = () => {
               </div>
               {/* Imagem do carro apenas no desktop */}
               <div className="relative order-1 lg:order-2 hidden lg:block">
-                <div className="bg-black p-6 rounded-lg">
+                <div className="bg-primary p-6 rounded-lg border-2 border-primary">
                   <img 
                     src={phoenixCar} 
                     alt="Carro da Phoenix Serviços Empresariais" 
@@ -302,7 +302,7 @@ const Index = () => {
                       <MapPin className="h-5 w-5 text-primary" />
                       <span className="text-muted-foreground">Rua Vicente Greco 292 Conj 706 Mauá, SP</span>
                     </div>
-                    <Button variant="phoenix" className="w-full mt-6">
+                    <Button variant="phoenix" className="w-full mt-6" onClick={handleWhatsAppClick}>
                       Entrar em Contato
                     </Button>
                   </CardContent>
