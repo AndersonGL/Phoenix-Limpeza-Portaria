@@ -300,7 +300,7 @@ const Index = () => {
                     </div>
                     <div className="flex items-center gap-3">
                       <MapPin className="h-5 w-5 text-primary" />
-                      <span className="text-muted-foreground">Rua Vicente Greco 292 Conj 706 Mauá, SP</span>
+                      <span className="text-muted-foreground">Rua Waterbo 179 Vila Vitória, Mauá-SP</span>
                     </div>
                     <Button variant="phoenix" className="w-full mt-6" onClick={handleWhatsAppClick}>
                       Entrar em Contato
@@ -352,7 +352,7 @@ const Index = () => {
                   <span>📧 phoenixservempresariais@gmail.com</span>
                 </div>
                 <div className="flex items-center justify-center gap-2">
-                  <span>📍 Rua Waterbo 179 Vila Vitória, Mauá, SP</span>
+                  <span>📍 Rua Waterbo 179 Vila Vitória, Mauá-SP</span>
                   <span>Cep: 09360-200</span>
                 </div>
               </div>
