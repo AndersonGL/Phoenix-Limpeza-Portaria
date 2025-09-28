@@ -335,9 +335,9 @@ const Index = () => {
               <h4 className="text-lg font-semibold mb-4">Serviços</h4>
               <ul className="space-y-2 text-sm text-primary-foreground/80">
                 <li>Limpeza</li>
+                <li>Controle de Acesso</li>
                 <li>Portaria e Recepção</li>
                 <li>Limpeza Pós-Obra</li>
-                <li>Controle de Acesso</li>
               </ul>
             </div>
             
