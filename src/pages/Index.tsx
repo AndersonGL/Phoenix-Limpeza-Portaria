@@ -32,9 +32,6 @@ const Index = () => {
         </div>
       </header>
 
-            
-           
-      <main>
         {/* Hero Section */}
         <section id="inicio" className="relative overflow-hidden bg-gradient-hero py-12 sm:py-20 lg:py-32">
           <div className="container mx-auto px-4">
@@ -230,89 +227,57 @@ const Index = () => {
         </section>
 
         {/* Por que escolher a Phoenix */}
-        <section className="py-12 sm:py-20">
-          <div className="container mx-auto px-4">
-            <div className="grid gap-8 lg:gap-12 lg:grid-cols-2 items-center">
-              <div>
-                <h2 className="mb-6 text-2xl sm:text-3xl font-bold tracking-tight text-primary lg:text-4xl">
-                  Por que escolher a Phoenix?
-                </h2>
-
-              <p className="text-lg text-muted-foreground mb-8">
-                Com mais de 30 anos de experiência no mercado,
-                 a Phoenix Serviços Empresariais se consolidou como referência em qualidade e confiabilidade.</p>
-
-
-
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10">
-                      <Shield className="h-4 w-4 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-primary">Profissionais Qualificados</h3>
-                      <p className="text-muted-foreground">
-                        Equipe treinada e certificada para oferecer o melhor atendimento
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10">
-                      <Sparkles className="h-4 w-4 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-primary">Qualidade Garantida</h3>
-                      <p className="text-muted-foreground">
-                        Compromisso com a excelência em todos os nossos serviços
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10">
-                      <Users className="h-4 w-4 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-primary">Atendimento Personalizado</h3>
-                      <p className="text-muted-foreground">
-                        Soluções sob medida para as necessidades da sua empresa
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-hero rounded-lg transform rotate-3"></div>
-                <Card className="relative bg-background p-8">
-                  <CardHeader className="text-center">
-                    <CardTitle className="text-2xl text-primary">Trabalhe Conosco</CardTitle>
-                    <CardDescription>
-                      Vagas para: Auxiliar de Limpeza. Porteiro. Controlador de Acesso. Recepcionista. Jardineiro. 
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <Phone className="h-5 w-5 text-primary" />
-                      <span className="text-muted-foreground">(11) 99600-0451</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Mail className="h-5 w-5 text-primary" />
-                      <span className="text-muted-foreground">phoenixservempresariais@gmail.com</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <MapPin className="h-5 w-5 text-primary" />Rua Waterloo 179, Vila Vitória, Mauá-SP
-                      <span className="text-muted-foreground"></span>
-                    </div>
-                    <Button variant="phoenix" className="w-full mt-6" onClick={handleWhatsAppClick}>
-                      Entrar em Contato
-                    </Button>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
+        <section className="bg-gray-50 py-8 sm:py-12">
+  <div className="container mx-auto px-4">
+    <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
+      Por que escolher a Phoenix
+    </h2>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="p-4 bg-white rounded-lg shadow text-center">
+        <h3 className="text-lg font-semibold mb-2">Profissionalismo</h3>
+        <p className="text-gray-700 break-words text-justify">
+          Nossa equipe altamente treinada garante qualidade e confiança em cada serviço prestado.
+        </p>
+      </div>
+      <div className="p-4 bg-white rounded-lg shadow text-center">
+        <h3 className="text-lg font-semibold mb-2">Atendimento Personalizado</h3>
+        <p className="text-gray-700 break-words text-justify">
+          Criamos soluções sob medida para atender às necessidades de cada cliente.
+        </p>
+      </div>
+      <div className="p-4 bg-white rounded-lg shadow text-center">
+        <h3 className="text-lg font-semibold mb-2">Experiência no Mercado</h3>
+        <p className="text-gray-700 break-words text-justify">
+          Mais de 30 anos atuando no setor de limpeza e portaria, sempre com excelência.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section className="bg-white py-8 sm:py-12">
+  <div className="container mx-auto px-4">
+    <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
+      Trabalhe Conosco
+    </h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <p className="text-gray-700 break-words text-justify mb-4">
+          Junte-se à nossa equipe e cresça profissionalmente em um ambiente sério e comprometido com a qualidade.
+        </p>
+        <a
+          href="/contato"
+          className="inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition"
+        >
+          Enviar Currículo
+        </a>
+      </div>
+      <div>
+       
+      </div>
+    </div>
+  </div>
+</section>
+        
       {/* Footer */}
       <footer className="border-t bg-primary text-primary-foreground py-12">
         <div className="container mx-auto px-4">
