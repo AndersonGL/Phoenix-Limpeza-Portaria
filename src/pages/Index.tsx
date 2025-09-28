@@ -111,7 +111,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm sm:text-base">
-                    Serviços completos de limpeza para ambientes corporativos com profissionais especializados
+                    Serviços completos de Limpeza para ambientes corporativos com profissionais especializados
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -125,7 +125,7 @@ const Index = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-primary text-lg sm:text-xl">Controle de acesso 24h</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl">Controle de Acesso 24h</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm sm:text-base">
@@ -214,7 +214,7 @@ const Index = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-primary text-lg sm:text-xl">Reparos em geral</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl">Reparos em Geral</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm sm:text-base">
