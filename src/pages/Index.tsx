@@ -63,22 +63,22 @@ const Index = () => {
                 </div>
                 {/* Imagem do carro apenas no mobile */}
                 <div className="block lg:hidden mt-6">
-                  <div className="bg-primary p-4 rounded-lg">
+                  <div className="bg-primary p-4">
                     <img 
                       src={phoenixCar} 
                       alt="Carro da Phoenix Serviços Empresariais" 
-                      className="w-full max-w-sm mx-auto rounded-lg shadow-royal"
+                      className="w-full max-w-sm mx-auto"
                     />
                   </div>
                 </div>
               </div>
               {/* Imagem do carro apenas no desktop */}
               <div className="relative order-1 lg:order-2 hidden lg:block">
-                <div className="bg-primary p-6 rounded-lg">
+                <div className="bg-primary p-6">
                   <img 
                     src={phoenixCar} 
                     alt="Carro da Phoenix Serviços Empresariais" 
-                    className="w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto rounded-lg shadow-royal"
+                    className="w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto"
                   />
                 </div>
               </div>
