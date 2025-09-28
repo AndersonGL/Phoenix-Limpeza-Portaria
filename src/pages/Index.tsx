@@ -2,10 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import phoenixLogo from "@/assets/phoenix-logo.png";
 import phoenixCar from "@/assets/phoenix-car.png";
-import cleaningPerson from "@/assets/limpeza.jpg";
-import securityPerson from "@/assets/controlador.jpg";
-import receptionistPerson from "@/assets/jardinagem.jpg";
-import hrPerson from "@/assets/manutencao.jpg";
+import cleaningPerson from "@/assets/cleaning-person.jpg";
+import securityPerson from "@/assets/security-person.jpg";
+import receptionistPerson from "@/assets/receptionist-person.jpg";
+import hrPerson from "@/assets/hr-person.jpg";
+import administracaoPerson from "@/assets/administracao.jpg";
+import copeiraPerson from "@/assets/copeira.jpg";
+import recepcaoPerson from "@/assets/recepcao.jpg";
 
 
 import { Phone, Mail, MapPin, Menu, X, MessageCircle, Shield, Sparkles, Users } from "lucide-react";
@@ -41,31 +44,43 @@ const Index = () => {
                   <img 
                     src={phoenixLogo} 
                     alt="Phoenix Serviços Empresariais Logo" 
-                    className="h-40 sm:h-40 w-auto"
+                    className="h-32 sm:h-40 w-auto"
                   />
-                  <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-primary-foreground">
+                  <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-primary-foreground">
                     Phoenix
-                    <span className="block text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold">
+                    <span className="block text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-semibold">
                       Serviços Empresariais
                     </span>
                   </h1>
                 </div>
-                <p className="mb-6 sm:mb-8 text-base sm:text-lg text-primary-foreground/90">
+                <p className="mb-6 sm:mb-8 text-sm sm:text-base lg:text-lg text-primary-foreground/90">
                   Excelência em limpeza e portaria para empresas que valorizam qualidade e confiabilidade.
                 </p>
-                <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
+                <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start mb-6 lg:mb-0">
                   <Button variant="phoenix-outline" size="lg" className="w-full sm:w-auto">
                     Solicitar Orçamento
                   </Button>
-                
+                </div>
+                {/* Imagem do carro apenas no mobile */}
+                <div className="block lg:hidden mt-6">
+                  <div className="bg-black p-4 rounded-lg">
+                    <img 
+                      src={phoenixCar} 
+                      alt="Carro da Phoenix Serviços Empresariais" 
+                      className="w-full max-w-sm mx-auto rounded-lg shadow-royal"
+                    />
+                  </div>
                 </div>
               </div>
-              <div className="relative order-1 lg:order-2">
-                <img 
-                  src={phoenixCar} 
-                  alt="Carro da Phoenix Serviços Empresariais" 
-                  className="w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto rounded-lg shadow-royal"
-                />
+              {/* Imagem do carro apenas no desktop */}
+              <div className="relative order-1 lg:order-2 hidden lg:block">
+                <div className="bg-black p-6 rounded-lg">
+                  <img 
+                    src={phoenixCar} 
+                    alt="Carro da Phoenix Serviços Empresariais" 
+                    className="w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto rounded-lg shadow-royal"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -121,11 +136,11 @@ const Index = () => {
                   </CardDescription>
                 </CardContent>
               </Card>
-                  <Card className="text-center overflow-hidden">
+              <Card className="text-center overflow-hidden">
                 <div className="relative h-48 sm:h-56">
                   <img 
-                    src={cleaningPerson} 
-                    alt="Recpcionista" 
+                    src={recepcaoPerson} 
+                    alt="Recepcionista" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -142,7 +157,7 @@ const Index = () => {
                   <Card className="text-center overflow-hidden">
                 <div className="relative h-48 sm:h-56">
                   <img 
-                    src={cleaningPerson} 
+                    src={administracaoPerson} 
                     alt="Profissional de administração" 
                     className="w-full h-full object-cover"
                   />
@@ -160,7 +175,7 @@ const Index = () => {
     <Card className="text-center overflow-hidden">
                 <div className="relative h-48 sm:h-56">
                   <img 
-                    src={cleaningPerson} 
+                    src={copeiraPerson} 
                     alt="Copeira" 
                     className="w-full h-full object-cover"
                   />
@@ -303,11 +318,11 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {/* Logo e Descrição */}
-            <div className="text-center md:text-left">
+            <div className="text-center">
                <img 
                     src={phoenixLogo} 
                     alt="Phoenix Serviços Empresariais Logo" 
-                    className="h-20 sm:h-20 w-auto"
+                    className="h-20 sm:h-20 w-auto mx-auto mb-4"
                   />
               <h3 className="text-xl font-semibold mb-2">Phoenix Serviços Empresariais</h3>
               <p className="text-primary-foreground/80 text-sm">
@@ -316,30 +331,28 @@ const Index = () => {
             </div>
             
             {/* Serviços */}
-            <div className="text-center md:text-left">
+            <div className="text-center">
               <h4 className="text-lg font-semibold mb-4">Serviços</h4>
               <ul className="space-y-2 text-sm text-primary-foreground/80">
                 <li>Limpeza</li>
                 <li>Portaria e Recepção</li>
+                <li>Limpeza Pós-Obra</li>
                 <li>Controle de Acesso</li>
               </ul>
             </div>
             
             {/* Contato */}
-            <div className="text-center md:text-left">
+            <div className="text-center">
               <h4 className="text-lg font-semibold mb-4">Contato</h4>
               <div className="space-y-2 text-sm text-primary-foreground/80">
-                <div className="flex items-center justify-center md:justify-start gap-2">
-                  <Phone className="h-4 w-4" />
-                  <span>(11) 99600-0451</span>
+                <div className="flex items-center justify-center gap-2">
+                  <span>📞 (11) 99600-0451</span>
                 </div>
-                <div className="flex items-center justify-center md:justify-start gap-2">
-                  <Mail className="h-4 w-4" />
-                  <span>phoenixservempresariais@gmail.com</span>
+                <div className="flex items-center justify-center gap-2">
+                  <span>📧 phoenixservempresariais@gmail.com</span>
                 </div>
-                <div className="flex items-center justify-center md:justify-start gap-2">
-                  <MapPin className="h-4 w-4" />
-                  <span>Rua Vicente Greco 292 Conj 706 Mauá, SP</span>
+                <div className="flex items-center justify-center gap-2">
+                  <span>📍 Rua Vicente Greco 292 Conj 706 Mauá, SP</span>
                 </div>
               </div>
             </div>
