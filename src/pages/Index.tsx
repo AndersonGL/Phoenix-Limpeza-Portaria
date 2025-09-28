@@ -317,7 +317,7 @@ const Index = () => {
                   <span>📧 phoenixservempresariais@gmail.com</span>
                 </div>
                 <div className="flex items-center justify-center gap-2">
-                  <span>📍 Rua Waterloo 179, Vila Vitória, Mauá-SP</span>
+                  <span>📍Mauá-SP</span>
                   <span>Cep: 09360-200</span>
                 </div>
               </div>
