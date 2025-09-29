@@ -110,7 +110,7 @@ const Index = () => {
                   <CardTitle className="text-primary text-lg sm:text-xl font-bold">Limpeza</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-sm sm:text-base font-bold">
+                  <CardDescription className="text-slate-600 text-sm sm:text-base font-bold">
                     Serviços completos de Limpeza para ambientes corporativos com profissionais especializados
                   </CardDescription>
                 </CardContent>
@@ -128,7 +128,7 @@ const Index = () => {
                   <CardTitle className="text-primary text-lg sm:text-xl font-bold">Controle de Acesso 24h</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-sm sm:text-base font-bold">
+                  <CardDescription className="text-slate-600 text-sm sm:text-base font-bold">
                     Profissionais capacitados para monitorar entradas e saídas, garantindo segurança e organização
                   </CardDescription>
                 </CardContent>
@@ -145,7 +145,7 @@ const Index = () => {
                   <CardTitle className="text-primary text-lg sm:text-xl font-bold">Recepção e Atendimento ao cliente</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-sm sm:text-base font-bold">
+                  <CardDescription className="text-slate-600 text-sm sm:text-base font-bold">
                    Atendimento qualificado e acolhedor para recepção de visitantes e clientes
                   </CardDescription>
                 </CardContent>
@@ -163,7 +163,7 @@ const Index = () => {
                   <CardTitle className="text-primary text-lg sm:text-xl font-bold">Contratação CLT</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-sm sm:text-base font-bold">
+                  <CardDescription className="text-slate-600 text-sm sm:text-base font-bold">
                     Gestão completa de recursos humanos e administração de pessoal terceirizado
                   </CardDescription>
                 </CardContent>
@@ -181,7 +181,7 @@ const Index = () => {
                   <CardTitle className="text-primary text-lg sm:text-xl font-bold">Serviços de Copa</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-sm sm:text-base font-bold">
+                  <CardDescription className="text-slate-600 text-sm sm:text-base font-bold">
                     Profissionais para serviços de copa e atendimento em ambientes corporativos
                   </CardDescription>
                 </CardContent>
@@ -199,7 +199,7 @@ const Index = () => {
                   <CardTitle className="text-primary text-lg sm:text-xl font-bold">Manutenção de Jardins</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-sm sm:text-base font-bold">
+                  <CardDescription className="text-slate-600 text-sm sm:text-base font-bold">
                     Manutenção e cuidado de áreas verdes e paisagismo corporativo
                   </CardDescription>
                 </CardContent>
@@ -217,7 +217,7 @@ const Index = () => {
                   <CardTitle className="text-primary text-lg sm:text-xl font-bold">Reparos em Geral</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-sm sm:text-base font-bold">
+                  <CardDescription className="text-slate-600 text-sm sm:text-base font-bold">
                     Serviços especializados de manutenção para edifícios e instalações industriais
                   </CardDescription>
                 </CardContent>
