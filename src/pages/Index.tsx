@@ -142,7 +142,7 @@ const Index = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-primary text-lg sm:text-xl">Recepção e atendimento ao cliente</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl">Recepção e Atendimento ao cliente</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm sm:text-base">
