@@ -107,7 +107,7 @@ const Index = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-primary text-lg sm:text-xl">Limpeza</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl font-bold">Limpeza</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm sm:text-base font-bold">
@@ -125,7 +125,7 @@ const Index = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-primary text-lg sm:text-xl">Controle de Acesso 24h</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl font-bold">Controle de Acesso 24h</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm sm:text-base font-bold">
@@ -142,7 +142,7 @@ const Index = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-primary text-lg sm:text-xl">Recepção e Atendimento ao cliente</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl font-bold">Recepção e Atendimento ao cliente</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm sm:text-base font-bold">
@@ -160,7 +160,7 @@ const Index = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-primary text-lg sm:text-xl">Contratação CLT</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl font-bold">Contratação CLT</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm sm:text-base font-bold">
@@ -178,7 +178,7 @@ const Index = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-primary text-lg sm:text-xl">Serviços de Copa</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl font-bold">Serviços de Copa</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm sm:text-base font-bold">
@@ -196,7 +196,7 @@ const Index = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-primary text-lg sm:text-xl">Manutenção de Jardins</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl font-bold">Manutenção de Jardins</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm sm:text-base font-bold">
@@ -214,7 +214,7 @@ const Index = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-primary text-lg sm:text-xl">Reparos em Geral</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl font-bold">Reparos em Geral</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm sm:text-base font-bold">
