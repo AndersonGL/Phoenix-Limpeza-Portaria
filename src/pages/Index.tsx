@@ -235,19 +235,19 @@ const Index = () => {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div className="p-4 bg-white rounded-lg shadow text-center">
         <h3 className="text-lg font-semibold mb-2">Profissionalismo</h3>
-        <p className="text-slate-600 break-words text-justify font-bold">
+        <p className="text-slate-600 break-words text-justify font-bold text-sm sm:text-base">
           Nossa equipe altamente treinada garante qualidade e confiança em cada serviço prestado.
         </p>
       </div>
       <div className="p-4 bg-white rounded-lg shadow text-center">
         <h3 className="text-lg font-semibold mb-2">Atendimento Personalizado</h3>
-        <p className="text-slate-600 break-words text-justify font-bold">
+        <p className="text-slate-600 break-words text-justify font-bold text-sm sm:text-base">
           Criamos soluções sob medida para atender às necessidades de cada cliente.
         </p>
       </div>
       <div className="p-4 bg-white rounded-lg shadow text-center">
         <h3 className="text-lg font-semibold mb-2">Experiência no Mercado</h3>
-        <p className="text-slate-600 break-words text-justify font-bold">
+        <p className="text-slate-600 break-words text-justify font-bold text-sm sm:text-base">
           Mais de 30 anos atuando no setor de limpeza e portaria, sempre com excelência.
         </p>
       </div>
@@ -261,7 +261,7 @@ const Index = () => {
     </h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div className="text-center">
-        <p className="text-slate-600 break-words text-justify mb-4 font-bold">
+        <p className="text-slate-600 break-words text-justify mb-4 font-bold text-sm sm:text-base">
           Junte-se à nossa equipe e cresça profissionalmente em um ambiente sério e comprometido com a qualidade.
         </p>
         <a
