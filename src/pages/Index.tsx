@@ -60,7 +60,7 @@ const Index = () => {
                 </div>
                 {/* Imagem do carro apenas no mobile */}
                 <div className="block lg:hidden mt-6">
-                  <div className="bg-primary p-">
+                  <div className="bg-gradient-hero p-">
                     <img 
                       src={phoenixCar} 
                       alt="Carro da Phoenix Serviços Empresariais" 
@@ -71,7 +71,7 @@ const Index = () => {
               </div>
               {/* Imagem do carro apenas no desktop */}
               <div className="relative order-1 lg:order-2 hidden lg:block">
-                <div className="bg-primary p-">
+                <div className="bg-gradient-hero p-">
                   <img 
                     src={phoenixCar} 
                     alt="Carro da Phoenix Serviços Empresariais" 
@@ -110,7 +110,7 @@ const Index = () => {
                   <CardTitle className="text-primary text-lg sm:text-xl">Limpeza</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-sm sm:text-base">
+                  <CardDescription className="text-sm sm:text-base font-bold">
                     Serviços completos de Limpeza para ambientes corporativos com profissionais especializados
                   </CardDescription>
                 </CardContent>
@@ -128,7 +128,7 @@ const Index = () => {
                   <CardTitle className="text-primary text-lg sm:text-xl">Controle de Acesso 24h</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-sm sm:text-base">
+                  <CardDescription className="text-sm sm:text-base font-bold">
                     Profissionais capacitados para monitorar entradas e saídas, garantindo segurança e organização
                   </CardDescription>
                 </CardContent>
@@ -145,7 +145,7 @@ const Index = () => {
                   <CardTitle className="text-primary text-lg sm:text-xl">Recepção e Atendimento ao cliente</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-sm sm:text-base">
+                  <CardDescription className="text-sm sm:text-base font-bold">
                    Atendimento qualificado e acolhedor para recepção de visitantes e clientes
                   </CardDescription>
                 </CardContent>
@@ -163,7 +163,7 @@ const Index = () => {
                   <CardTitle className="text-primary text-lg sm:text-xl">Contratação CLT</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-sm sm:text-base">
+                  <CardDescription className="text-sm sm:text-base font-bold">
                     Gestão completa de recursos humanos e administração de pessoal terceirizado
                   </CardDescription>
                 </CardContent>
@@ -181,7 +181,7 @@ const Index = () => {
                   <CardTitle className="text-primary text-lg sm:text-xl">Serviços de Copa</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-sm sm:text-base">
+                  <CardDescription className="text-sm sm:text-base font-bold">
                     Profissionais para serviços de copa e atendimento em ambientes corporativos
                   </CardDescription>
                 </CardContent>
@@ -199,7 +199,7 @@ const Index = () => {
                   <CardTitle className="text-primary text-lg sm:text-xl">Manutenção de Jardins</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-sm sm:text-base">
+                  <CardDescription className="text-sm sm:text-base font-bold">
                     Manutenção e cuidado de áreas verdes e paisagismo corporativo
                   </CardDescription>
                 </CardContent>
@@ -217,7 +217,7 @@ const Index = () => {
                   <CardTitle className="text-primary text-lg sm:text-xl">Reparos em Geral</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-sm sm:text-base">
+                  <CardDescription className="text-sm sm:text-base font-bold">
                     Serviços especializados de manutenção para edifícios e instalações industriais
                   </CardDescription>
                 </CardContent>
@@ -235,19 +235,19 @@ const Index = () => {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div className="p-4 bg-white rounded-lg shadow text-center">
         <h3 className="text-lg font-semibold mb-2">Profissionalismo</h3>
-        <p className="text-gray-700 break-words text-justify">
+        <p className="text-gray-700 break-words text-justify font-bold">
           Nossa equipe altamente treinada garante qualidade e confiança em cada serviço prestado.
         </p>
       </div>
       <div className="p-4 bg-white rounded-lg shadow text-center">
         <h3 className="text-lg font-semibold mb-2">Atendimento Personalizado</h3>
-        <p className="text-gray-700 break-words text-justify">
+        <p className="text-gray-700 break-words text-justify font-bold">
           Criamos soluções sob medida para atender às necessidades de cada cliente.
         </p>
       </div>
       <div className="p-4 bg-white rounded-lg shadow text-center">
         <h3 className="text-lg font-semibold mb-2">Experiência no Mercado</h3>
-        <p className="text-gray-700 break-words text-justify">
+        <p className="text-gray-700 break-words text-justify font-bold">
           Mais de 30 anos atuando no setor de limpeza e portaria, sempre com excelência.
         </p>
       </div>
@@ -260,12 +260,12 @@ const Index = () => {
       Trabalhe Conosco
     </h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <div>
-        <p className="text-gray-700 break-words text-justify mb-4">
+      <div className="text-center">
+        <p className="text-gray-700 break-words text-justify mb-4 font-bold">
           Junte-se à nossa equipe e cresça profissionalmente em um ambiente sério e comprometido com a qualidade.
         </p>
         <a
-          href="/contato"
+          href="mailto:phoenixservempresariais@gmail.com"
           className="inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition"
         >
           Enviar Currículo
