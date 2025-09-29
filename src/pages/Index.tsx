@@ -141,7 +141,7 @@ const Index = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-primary text-lg sm:text-xl font-bold">Recepção e atendimento ao cliente</CardTitle>
+                  <CardTitle className="text-primary text-lg sm:text-xl font-bold">Recepção e Atendimento ao Cliente</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-slate-600 text-sm sm:text-base font-bold">
