@@ -33,7 +33,7 @@ const Index = () => {
       </header>
 
         {/* Hero Section */}
-        <section id="inicio" className="relative overflow-hidden bg-gradient-hero py-12 sm:py-20 lg:py-32">
+        <section id="inicio" className="relative overflow-hidden bg-gradient-hero py-12 sm:py-20 lg:py-3">
           <div className="container mx-auto px-4">
             <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="text-center lg:text-left order-2 lg:order-1">
