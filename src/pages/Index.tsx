@@ -10,7 +10,6 @@ import administracaoPerson from "@/assets/administracao.jpg";
 import copeiraPerson from "@/assets/copeira.jpg";
 import recepcaoPerson from "@/assets/recepcao.jpg";
 
-
 import { Phone, Mail, MapPin, Menu, X, MessageCircle, Shield, Sparkles, Users } from "lucide-react";
 import { useState } from "react";
 
@@ -92,9 +91,9 @@ const Index = () => {
               <h2 className="mb-4 text-2xl sm:text-3xl font-bold tracking-tight text-primary lg:text-4xl">
                 Nossos Serviços
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-                Excelência em limpeza e portaria para empresas que valorizam qualidade e confiabilidade.
-              </p>
+             <p className="text-base sm:text-lg text-gray-900 max-w-2xl mx-auto">
+  Excelência em limpeza e portaria para empresas que valorizam qualidade e confiabilidade.
+</p>
             </div>
 
             <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -254,26 +253,23 @@ const Index = () => {
     </div>
   </div>
 </section>
+
+{/* Trabalhe Conosco */}
 <section className="bg-white py-8 sm:py-12">
-  <div className="container mx-auto px-4">
-    <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8">
       Trabalhe Conosco
     </h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <div className="text-center">
-        <p className="text-slate-600 break-words text-justify mb-4 font-bold text-sm sm:text-base">
-          Junte-se à nossa equipe e cresça profissionalmente em um ambiente sério e comprometido com a qualidade.
-        </p>
-        <a
-          href="mailto:phoenixservempresariais@gmail.com"
-          className="inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition"
-        >
-          Enviar Currículo
-        </a>
-      </div>
-      <div>
-       
-      </div>
+    <div className="flex flex-col items-center gap-4 px-2 sm:px-0">
+      <p className="text-slate-600 text-center font-bold text-sm sm:text-base max-w-full sm:max-w-xl break-words">
+        Junte-se à nossa equipe e cresça profissionalmente em um ambiente sério e comprometido com a qualidade.
+      </p>
+      <a
+        href="mailto:phoenixservempresariais@gmail.com"
+        className="w-full sm:w-auto text-center bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition"
+      >
+        Enviar Currículo
+      </a>
     </div>
   </div>
 </section>
