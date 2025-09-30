@@ -20,16 +20,107 @@ const Index = () => {
     window.open('https://wa.me/5511996000451?text=Olá! Gostaria de solicitar um orçamento para os serviços da Phoenix.', '_blank');
   };
 
- return (
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const offset = 80; // altura do header fixo
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      setIsMenuOpen(false);
+    }
+  };
+
+  return (
     <div className="min-h-screen bg-background">
-      {/* Header Simples */}
-      <header className="#">
-        <div className="container mx-auto px-0 py-0">
-          <div className="flex items-center justify-between">
-            {/* Espaço vazio à esquerda */}
+      {/* Header Profissional */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-sm">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-16">
+            {/* Logo */}
+            <div className="flex items-center gap-2">
+              <img 
+                src={phoenixLogo} 
+                alt="Phoenix Logo" 
+                className="h-10 w-auto"
+              />
+              <span className="text-lg font-bold text-primary hidden sm:inline">Phoenix</span>
+            </div>
+
+            {/* Menu Desktop */}
+            <nav className="hidden md:flex items-center gap-6">
+              <button 
+                onClick={() => scrollToSection('inicio')}
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              >
+                Início
+              </button>
+              <button 
+                onClick={() => scrollToSection('servicos')}
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              >
+                Serviços
+              </button>
+              <button 
+                onClick={() => scrollToSection('contato')}
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              >
+                Contato
+              </button>
+              <Button variant="phoenix" size="sm" onClick={handleWhatsAppClick}>
+                Orçamento
+              </Button>
+            </nav>
+
+            {/* Menu Mobile Toggle */}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden p-2 hover:bg-muted rounded-lg transition-colors"
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
           </div>
+
+          {/* Menu Mobile */}
+          {isMenuOpen && (
+            <nav className="md:hidden py-4 border-t border-border">
+              <div className="flex flex-col gap-4">
+                <button 
+                  onClick={() => scrollToSection('inicio')}
+                  className="text-left px-4 py-2 text-sm font-medium text-foreground hover:bg-muted rounded-lg transition-colors"
+                >
+                  Início
+                </button>
+                <button 
+                  onClick={() => scrollToSection('servicos')}
+                  className="text-left px-4 py-2 text-sm font-medium text-foreground hover:bg-muted rounded-lg transition-colors"
+                >
+                  Serviços
+                </button>
+                <button 
+                  onClick={() => scrollToSection('contato')}
+                  className="text-left px-4 py-2 text-sm font-medium text-foreground hover:bg-muted rounded-lg transition-colors"
+                >
+                  Contato
+                </button>
+                <div className="px-4">
+                  <Button variant="phoenix" size="sm" onClick={handleWhatsAppClick} className="w-full">
+                    Orçamento
+                  </Button>
+                </div>
+              </div>
+            </nav>
+          )}
         </div>
       </header>
+
+      {/* Spacer para compensar o header fixo */}
+      <div className="h-16"></div>
 
         {/* Hero Section */}
         <section id="inicio" className="relative overflow-hidden bg-gradient-hero py-12 sm:py-20 lg:py-3">
@@ -59,22 +150,22 @@ const Index = () => {
                 </div>
                 {/* Imagem do carro apenas no mobile */}
                 <div className="block lg:hidden mt-6">
-                  <div className="bg-white">
+                  <div className="bg-white rounded-lg shadow-elegant p-6">
                     <img 
                       src={phoenixCar} 
                       alt="Carro da Phoenix Serviços Empresariais" 
-                      className="w-full h-auto"
+                      className="w-full h-auto rounded-lg"
                     />
                   </div>
                 </div>
               </div>
               {/* Imagem do carro apenas no desktop */}
               <div className="relative order-1 lg:order-2 hidden lg:block">
-                <div className="bg-white">
+                <div className="bg-white rounded-2xl shadow-elegant p-8">
                   <img 
                     src={phoenixCar} 
                     alt="Carro da Phoenix Serviços Empresariais" 
-                    className="w-full h-auto"
+                    className="w-full h-auto rounded-lg"
                   />
                 </div>
               </div>
@@ -303,7 +394,7 @@ const Index = () => {
             </div>
             
             {/* Contato */}
-            <div className="text-center">
+            <div id="contato" className="text-center">
               <h4 className="text-lg font-semibold mb-4">Contato</h4>
               <div className="space-y-2 text-sm text-primary-foreground/80">
                 <div className="flex items-center justify-center gap-2">
