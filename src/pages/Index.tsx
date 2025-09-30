@@ -42,13 +42,13 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex items-center gap-2">
+            <div className="hidden md:flex items-center gap-2">
               <img 
                 src={phoenixLogo} 
                 alt="Phoenix Logo" 
                 className="h-10 w-auto"
               />
-              <span className="text-lg font-bold text-primary hidden sm:inline">Phoenix</span>
+              <span className="text-lg font-bold text-primary">Phoenix</span>
             </div>
 
             {/* Menu Mobile Toggle */}
