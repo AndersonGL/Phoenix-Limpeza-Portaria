@@ -135,10 +135,9 @@ const Index = () => {
                 </div>
               </div>
               {/* Imagem do carro apenas no desktop */}
-              
 
-<div className="relative order-1 lg:order-2 hidden lg:block">
-  <div className="bg-white rounded-2xl shadow-elegant p-8 lg:translate-x-10">
+              <div className="relative order-1 lg:order-2 hidden lg:block">
+  <div className="bg-white rounded-2xl shadow-elegant p-8 lg:translate-x-20">
     <img 
       src={phoenixCar} 
       alt="Carro da Phoenix Serviços Empresariais" 
@@ -146,8 +145,9 @@ const Index = () => {
     />
   </div>
 </div>
- </div>
+</div>
           </div>
+
         </section>
 
 
