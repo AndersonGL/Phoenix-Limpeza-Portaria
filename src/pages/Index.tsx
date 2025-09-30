@@ -160,9 +160,10 @@ const Index = () => {
               <h2 className="mb-4 text-2xl sm:text-3xl font-bold tracking-tight text-primary lg:text-4xl">
                 Nossos Serviços
               </h2>
-              <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
-                Excelência em limpeza e portaria para empresas que valorizam qualidade e confiabilidade.
-              </p>
+             <p className="text-base sm:text-lg text-slate-500 font-bold max-w-2xl mx-auto">
+  Excelência em limpeza e portaria para empresas que valorizam qualidade e confiabilidade.
+</p>
+
             </div>
 
             <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
