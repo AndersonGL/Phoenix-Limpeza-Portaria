@@ -51,35 +51,10 @@ const Index = () => {
               <span className="text-lg font-bold text-primary hidden sm:inline">Phoenix</span>
             </div>
 
-            {/* Menu Desktop */}
-            <nav className="hidden md:flex items-center gap-6">
-              <button 
-                onClick={() => scrollToSection('inicio')}
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-              >
-                Início
-              </button>
-              <button 
-                onClick={() => scrollToSection('servicos')}
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-              >
-                Serviços
-              </button>
-              <button 
-                onClick={() => scrollToSection('contato')}
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-              >
-                Contato
-              </button>
-              <Button variant="phoenix" size="sm" onClick={handleWhatsAppClick}>
-                Orçamento
-              </Button>
-            </nav>
-
             {/* Menu Mobile Toggle */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 hover:bg-muted rounded-lg transition-colors"
+              className="p-2 hover:bg-muted rounded-lg transition-colors"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -88,7 +63,7 @@ const Index = () => {
 
           {/* Menu Mobile */}
           {isMenuOpen && (
-            <nav className="md:hidden py-4 border-t border-border">
+            <nav className="py-4 border-t border-border">
               <div className="flex flex-col gap-4">
                 <button 
                   onClick={() => scrollToSection('inicio')}
