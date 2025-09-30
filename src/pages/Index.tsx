@@ -37,8 +37,8 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header Profissional */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-sm">
+      {/* Header Profissional - Apenas Mobile */}
+      <header className="md:hidden fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-sm">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -94,8 +94,8 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Spacer para compensar o header fixo */}
-      <div className="h-16"></div>
+      {/* Spacer para compensar o header fixo - Apenas Mobile */}
+      <div className="md:hidden h-16"></div>
 
         {/* Hero Section */}
         <section id="inicio" className="relative overflow-hidden bg-gradient-hero py-12 sm:py-20 lg:py-3">
