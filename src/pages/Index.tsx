@@ -59,7 +59,7 @@ const Index = () => {
                 </div>
                 {/* Imagem do carro apenas no mobile */}
                 <div className="block lg:hidden mt-6">
-                  <div className="bg-white p-4 rounded-lg">
+                  <div className="bg-white">
                     <img 
                       src={phoenixCar} 
                       alt="Carro da Phoenix Serviços Empresariais" 
@@ -70,7 +70,7 @@ const Index = () => {
               </div>
               {/* Imagem do carro apenas no desktop */}
               <div className="relative order-1 lg:order-2 hidden lg:block">
-                <div className="bg-white p-4 rounded-lg">
+                <div className="bg-white">
                   <img 
                     src={phoenixCar} 
                     alt="Carro da Phoenix Serviços Empresariais" 
