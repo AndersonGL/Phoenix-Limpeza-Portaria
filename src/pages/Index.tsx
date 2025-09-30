@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import phoenixLogo from "@/assets/phoenix-logo.png";
-import phoenixCar from "@/assets/phoenix-car.png";
+import phoenixCar from "@/assets/phoenix-car-new.jpg";
 import cleaningPerson from "@/assets/limpeza.jpg";
 import securityPerson from "@/assets/controlador.jpg";
 import receptionistPerson from "@/assets/jardinagem.jpg";
