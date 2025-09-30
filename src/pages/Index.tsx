@@ -59,22 +59,22 @@ const Index = () => {
                 </div>
                 {/* Imagem do carro apenas no mobile */}
                 <div className="block lg:hidden mt-6">
-                  <div className="bg-gradient-hero p-">
+                  <div className="bg-white p-4 rounded-lg">
                     <img 
                       src={phoenixCar} 
                       alt="Carro da Phoenix Serviços Empresariais" 
-                      className="#"
+                      className="w-full h-auto"
                     />
                   </div>
                 </div>
               </div>
               {/* Imagem do carro apenas no desktop */}
               <div className="relative order-1 lg:order-2 hidden lg:block">
-                <div className="bg-gradient-hero p-">
+                <div className="bg-white p-4 rounded-lg">
                   <img 
                     src={phoenixCar} 
                     alt="Carro da Phoenix Serviços Empresariais" 
-                    className="#"
+                    className="w-full h-auto"
                   />
                 </div>
               </div>
@@ -88,15 +88,12 @@ const Index = () => {
         <section id="servicos" className="py-12 sm:py-20 bg-secondary/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 sm:mb-16">
+              <h2 className="mb-4 text-2xl sm:text-3xl font-bold tracking-tight text-primary lg:text-4xl">
                 Nossos Serviços
               </h2>
-             <p className="text-base sm:text-lg text-gray-900 max-w-2xl mx-auto">
-  Excelência em limpeza e portaria para empresas que valorizam qualidade e confiabilidade.
-</p>
-
-<p className="text-base sm:text-lg text-gray-900 max-w-2xl mx-auto text-center font-bold">
-  Excelência em limpeza e portaria para empresas que valorizam qualidade e confiabilidade.
-</p>
+              <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
+                Excelência em limpeza e portaria para empresas que valorizam qualidade e confiabilidade.
+              </p>
             </div>
 
             <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
