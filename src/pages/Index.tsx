@@ -88,10 +88,13 @@ const Index = () => {
         <section id="servicos" className="py-12 sm:py-20 bg-secondary/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 sm:mb-16">
-              <h2 className="mb-4 text-2xl sm:text-3xl font-bold tracking-tight text-primary lg:text-4xl">
                 Nossos Serviços
               </h2>
              <p className="text-base sm:text-lg text-gray-900 max-w-2xl mx-auto">
+  Excelência em limpeza e portaria para empresas que valorizam qualidade e confiabilidade.
+</p>
+
+<p className="text-base sm:text-lg text-gray-900 max-w-2xl mx-auto text-center font-bold">
   Excelência em limpeza e portaria para empresas que valorizam qualidade e confiabilidade.
 </p>
             </div>
