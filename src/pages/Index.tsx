@@ -10,7 +10,8 @@ import administracaoPerson from "@/assets/administracao.jpg";
 import copeiraPerson from "@/assets/copeira.jpg";
 import recepcaoPerson from "@/assets/recepcao.jpg";
 
-import { Phone, Mail, MapPin, Menu, X, MessageCircle, Shield, Sparkles, Users } from "lucide-react";
+import { Phone, Mail, MapPin, Menu, X, Shield, Sparkles, Users } from "lucide-react";
+import whatsappIcon from "@/assets/whatsapp.svg";
 import { useState } from "react";
 
 const Index = () => {
@@ -396,13 +397,13 @@ const Index = () => {
         </div>
       </footer>
 
-      {/* Botão WhatsApp Flutuante */}
+      {/* Botão WhatsApp Flutuante com SVG */}
       <button
         onClick={handleWhatsAppClick}
-        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 z-50"
+        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 z-50 flex items-center justify-center"
         aria-label="Entrar em contato via WhatsApp"
       >
-        <MessageCircle className="h-6 w-6" />
+        <img src={whatsappIcon} alt="WhatsApp" className="h-6 w-6" />
       </button>
     </div>
   );
